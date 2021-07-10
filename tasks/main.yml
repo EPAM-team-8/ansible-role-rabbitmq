@@ -53,8 +53,9 @@
   apt:
     name: '{{ item }}'
     state: present
-  loop: '{{ erlang_package_list }}'
     cache_valid_time: 3600
+  loop: '{{ erlang_package_list }}'
+
 
 - name: Install RabbitMQ Server
   apt:
