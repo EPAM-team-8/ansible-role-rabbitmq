@@ -22,8 +22,8 @@
 - name: Add rabbitmq users admin
   no_log: true
   rabbitmq_user:
-    user: {{rabbitmq_user}}
-    password: {{rabbitmq_password}}
+    user: "{{rabbitmq_user}}"
+    password: "{{rabbitmq_password}}"
     vhost: /
     tags: administrator
     configure_priv: .*
